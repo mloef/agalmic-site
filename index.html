@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Roboto-Thin';
+            src: url('Roboto-Thin.ttf');
+        }
+
+        body {
+            background-image: url('Output-4096x4096.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Roboto-Thin, monospace;
+            font-style: normal;
+            font-weight: 100;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .title {
+            position: absolute;
+            top: 23%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            color: #d1c493;
+
+            font-size: 5em;
+            text-align: center;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .menu {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            color: white;
+            font-size: 2em;
+        }
+        .about {
+            display: none;
+            position: fixed;
+            top: 40%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .footer, .menu {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Agalmic Labs</div>
+    <div class="footer">© 2023 Agalmic Labs. All rights reserved.</div>
+    <div class="menu" onclick="toggleAbout()">☰</div>
+    <div class="about" id="about">Agalmic Labs is the business name for Max Loeffler's projects.</div>
+
+    <script>
+        function toggleAbout() {
+            var about = document.getElementById('about');
+            if (about.style.display === "none") {
+                about.style.display = "block";
+            } else {
+                about.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
