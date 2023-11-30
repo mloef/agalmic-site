@@ -18,16 +18,6 @@
             margin: 0;
             padding: 0;
         }
-        .title {
-            position: absolute;
-            top: 23%;
-            left: 40%;
-            transform: translate(-50%, -50%);
-            color: #f5ffc3;
-            text-shadow: 2px 2px 4px #b3ab9e;
-            font-size: 5em;
-            text-align: center;
-        }
         .footer {
             position: fixed;
             left: 0;
@@ -49,7 +39,7 @@
         .about {
             display: none;
             position: fixed;
-            top: 40%;
+            top: 23%;
             left: 40%;
             transform: translate(-50%, -50%);
             background-color: white;
@@ -63,10 +53,9 @@
     </style>
 </head>
 <body>
-    <div class="title">Agalmic Labs</div>
     <div class="footer">© 2023 Agalmic Labs. All rights reserved.</div>
     <div class="menu" onclick="toggleAbout()">☰</div>
-    <div class="about" id="about">Agalmic Labs is the business name for Max Loeffler's projects.</div>
+    <div class="about" id="about">A loose collection of esoteric projects is Agalmic Labs. Agalmic Labs is Max Loeffler.</div>
 
     <script>
         function toggleAbout() {
